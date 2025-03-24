@@ -1,0 +1,30 @@
+{
+  "name": "old-lake-3569",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "old-lake-3569-d1",
+      "database_id": "0f4b5e87-c248-4a5c-a5d9-62c16a124bb7"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "old-lake-3569-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
